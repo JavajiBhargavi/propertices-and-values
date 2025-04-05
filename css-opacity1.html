@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Opacity</title>
+</head>
+<style>
+    .img{
+        opacity: 0.5;
+    }
+    .img1{
+        opacity: 0.5;
+    }
+    .img1:hover{
+        opacity: 1.0;
+    }
+    .img2:hover{
+        opacity: 0.5;
+    }
+    div.background{
+        background-image: url(file:///C:/Users/key/Pictures/nature-images..webp);
+        border: 2px solid black;
+    }
+    div.transbox{
+        margin: 30px;
+        background-color: white;
+        border: 1px solid black;
+        opacity: 0.6;
+    }
+    div.transbox p{
+        margin: 5%;
+        font-weight: bold;
+        color:black;
+    }
+</style>
+<body>
+    <h2>Image Transparency</h2>
+    <p>Butterfly</p>
+    <img class="img" src="c:\Users\key\Pictures\360_F_787166948_1YEZeLZl8XTsp6OXXK78rovNTNPC6PoC.jpg" width="200px"><br>
+   
+    <h2>Image Transparency:hover</h2>
+    <img class="img1" src="c:\Users\key\Pictures\Bridal_pink_-_morwell_rose_garden.jpg" width="200px">
+    <img class="img1" src="c:\Users\key\Pictures\360_F_787166948_1YEZeLZl8XTsp6OXXK78rovNTNPC6PoC.jpg" width="200px">
+
+    <h2>Image :hover</h2>
+    <img class="img2" src="c:\Users\key\Pictures\Bridal_pink_-_morwell_rose_garden.jpg" width="200px">
+    <img class="img2" src="c:\Users\key\Pictures\360_F_787166948_1YEZeLZl8XTsp6OXXK78rovNTNPC6PoC.jpg" width="200px">
+
+    <h2>Text in Transparent box</h2>
+    <div class="background">
+        <div class="transbox">
+            <p>Rose Flower</p>
+        </div>
+    </div>
+</body>
+</html>

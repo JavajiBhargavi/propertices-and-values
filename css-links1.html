@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS links</title>
+</head>
+<style>
+    h2{
+        line-height: 2px;
+        margin-top: 50px;
+    }
+    .a{
+        color:deeppink;
+    }
+    .a1:link{
+        color:blue;
+    }
+    .a1:visited{
+        color: violet;
+    }
+    .a1:hover{
+        color: purple;
+    }
+    .a1:active{
+        color: red;
+    }
+    .a2:link {
+        text-decoration: none;
+        color: green;
+    }
+
+    .a2:visited {
+        text-decoration: none;
+        color: brown;
+    }
+    .a2:hover {
+        text-decoration: underline;
+        color: darkviolet;
+    }
+    .a2:active {
+        text-decoration: underline;
+        color: gold;
+    }
+
+    .a3:link {
+        background-color:orange ;
+    }
+    .a3:visited {
+        background-color: violet;
+    }
+    .a3:hover {
+        background-color: coral;
+    }
+    .a3:active {
+        background-color: pink;
+    }
+
+    .a4:link, .a4:visited {
+        background-color: red;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .a4:hover,.a4:active{
+        background-color: blue;
+    }
+</style>
+<body>
+    <h2>Styling links</h2>
+    <p><b><a href="default.asp" target="_blank" class="a">give your best</a></b></p>
+    <p><b><a href="default.asp" target="_blank" class="a1">give your best</a></b></p>
+
+    <h2>Text Decoration</h2>
+    <p><b><a href="default.asp" target="_blank" class="a2">give your best</a></b></p>
+
+    <h2>Background color</h2>
+    <p><b><a href="default.asp" target="_blank" class="a3">give your best</a></b></p>
+    
+    <h2>Link buttons</h2>
+    <p><b><a href="default.asp" target="_blank" class="a4">give your best</a></b></p>
+
+</body>
+</html>

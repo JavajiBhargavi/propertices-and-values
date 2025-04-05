@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Examples</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .box{
+        float: left;
+        width:200px;
+        padding: 50px;
+    }
+    .clearfix::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
+<body>
+    <h2>Grid of Boxes</h2>
+    <p>Float boxes side by side:</p>
+    <div class="clearfix">
+        <div class="box" style="background-color:#b2b2b2;">
+            <p>If you run out of kind words for stop talking.</p>
+        </div>
+        <div class="box" style="background-color: #c2c2c2;">
+            <p>It is never too ate to be what you might have been.</p>
+        </div>
+        <div class="box" style="background-color: #dcdcdc;">
+            <p>If you're going through hell,keep going.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS inline block</title>
+</head>
+<style>
+    span.a{
+        display: inline;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid lightgray;
+        background-color: lightgreen;
+    }
+    span.b{
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid lightgray;
+        background-color: lightgreen;
+    }
+    span.c{
+        display: block;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid lightgray;
+        background-color: lightgreen;
+    }
+    .nav{
+        background-color:cyan;
+        list-style-type: none;
+        text-align: center;
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    .nav li{
+        display: inline-block;
+        font-size: 20px;
+        padding: 20px;
+    }
+</style>
+<body>
+    <h1>The display Property</h1>
+    <h2>display:inline</h2>
+    <div>Delhi's urban agglomeration,which includes the satellite cities
+         <span class="a">Ghaziabad</span>,
+         <span class="a">Faridabad</span>,
+         Gurgaon,Noida,Grater Noida and YEIDA city located in an area Known as the National Capital Region(NCR),has an estimated population of over 28 million, making it the largest metropolitan area in india and the second-largest in the world.</div>
+
+    <h2>dispaly:inline-block</h2>
+    <div>Delhi's urban agglomeration,which includes the satellite cities 
+        <span class="b">Ghaziabad</span>,
+        <span class="b">Faridabad</span>,
+        Gurgaon,Noida,Grater Noida and YEIDA city located in an area Known as the National Capital Region(NCR),has an estimated population of over 28 million, making it the largest metropolitan area in india and the second-largest in the world.</div>
+
+    <h2>dispaly:block</h2>
+    <div>Delhi's urban agglomeration,which includes the satellite cities 
+        <span class="c">Ghaziabad</span>,
+        <span class="c">Faridabad</span>,
+        Gurgaon,Noida,Grater Noida and YEIDA city located in an area Known as the National Capital Region(NCR),has an estimated population of over 28 million, making it the largest metropolitan area in india and the second-largest in the world.</div>
+
+
+     <h2>Horizontal Navigation Links</h2>
+     <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#clients">Our Clients</a></li>
+        <li><a href="#contact">Contact</a></li>
+     </ul>   
+</body>
+</html>

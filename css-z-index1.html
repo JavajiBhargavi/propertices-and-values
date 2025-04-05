@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Z-Index</title>
+</head>
+<style>
+    img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    .div{
+        position: relative;
+    }
+    .black-box{
+        position: relative;
+        z-index: 1;
+        border: 2px solid black;
+        width: 300px;
+        height: 150px;
+        margin: 30px;
+    }
+    .gray-box{
+        position: absolute;
+        z-index: 3;
+        background-color: lightgray;
+        height: 60px;
+        width: 200px;
+        left: 50px;
+        top: 95px;
+    }
+    .box{
+        position: absolute;
+        z-index: 2;
+        background-color: lightgreen;
+        width: 20%;
+        left: 320px;
+        top: -25px;
+        height: 80px;
+    }
+</style>
+<body>
+    <h1>Butterfly</h1>
+    <img src="c:\Users\key\Pictures\360_F_787166948_1YEZeLZl8XTsp6OXXK78rovNTNPC6PoC.jpg">
+    <p>It is said that life is short,but it is the longest thing you will ever do.</p>
+
+    <h1 style="margin-top: 30%;">Z-Index example</h1>
+    <div class="div">
+        <div class="black-box">Life is too short to be unhappy.</div>
+        <div class="gray-box">Life is too short to live  the same day twice.</div>
+        <div class="box">Life is short enjoy the little things.</div>
+    </div>
+</body>
+</html>

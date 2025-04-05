@@ -1,0 +1,45 @@
+.div{
+    background-color: cornflowerblue;
+    padding: 1px;
+    border-radius: 10px 10px 0 0;
+}
+.div h1{
+    text-align: center;
+    color: white;
+
+}
+.div1{
+    background-color: crimson;
+    margin: 0;
+    padding: 1px;
+    position: sticky;
+}
+.div1 ul{
+    display: flex;
+    list-style: none;
+    padding: 1px;
+    font-size: large;
+}
+.div1 a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+.div1 a:hover{
+    background-color: aqua;
+    padding: 15px;
+}
+.div3{
+    background-image: url('https://4kwallpapers.com/images/wallpapers/abstract-background-4480x2520-11615.png');
+    background-repeat: no-repeat;
+    width: 99.2%;
+    height: 500px;
+    padding: 5px;
+}
+.div3 h2{
+    margin: 5%;
+    font-size: 100px;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    text-align-last:center ;
+}

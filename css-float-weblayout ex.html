@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web layout example</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-color: white;
+        width: 50%;
+    }
+    .header,.footer{
+        background-color: grey;
+        color: white;
+        padding: 15px;
+        width: 700px;
+        text-align: center;
+    }
+    .column{
+        float: left;
+        padding: 15px;
+    }
+    .clearfix::after{
+        content:"";
+        clear: both;
+        display: table;
+    }
+    .menu{
+        width: 25%;
+    }
+    .content{
+        width: 75%;
+    }
+    .menu ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .menu li{
+        padding: 8px;
+        margin-bottom: 8px;
+        background-color: aqua;
+        color: white;
+        width: 100px;
+    }
+    .menu li:hover{
+        background-color: aquamarine;
+    }
+</style>
+<body>
+    <div class="header">
+        <h1>Delhi</h1>
+    </div>
+    <div class="clearfix">
+        <div class="column menu">
+            <ul>
+                <li>The city</li>
+                <li>New delhi</li>
+                <li>The yamuna</li>
+                <li>Uttar pradesh</li>
+            </ul>
+        </div>
+        <div class="column content">
+            <h1>The City</h1>
+            <p>Delhi,officially the National Capital Territory(NCT)of Delhi,is a city and a union territory of india containing new delhi,the capital of india.Stradding the yamuna river,but spread chiefly to the west,or beyond its right bank.</p>
+            <p>Delhi shares borders with the state of Uttar Pradesh in the east and with the state of haryana in the remaining direction.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>While the NCT's population was about 16.8 millions.</p>
+    </div>
+</body>
+</html>

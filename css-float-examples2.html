@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS float</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .img{
+        float: left;
+        padding: 5px;
+    }
+    .clearfix::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
+<body>
+    <h1>Images side by side</h1>
+    <div class="clearfix">
+        <div class="img">
+            <img src="c:\Users\key\Pictures\images.jpg"
+            alt="butterfly" width="280px">
+        </div>
+        <div class="img">
+            <img src="c:\Users\key\Pictures\nature-images..webp"
+            alt="nature" width="300px">
+        </div>
+        <div class="img">
+            <img src="c:\Users\key\Pictures\Bridal_pink_-_morwell_rose_garden.jpg"
+            alt="rose" width="75%">
+        </div>
+    </div>
+</body>
+</html>

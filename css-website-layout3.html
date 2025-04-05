@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout</title>
+</head>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+    }
+    
+    .header {
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .column {
+      float: left;
+      padding: 10px;
+    }
+    
+    .column.side {
+      width: 25%;
+    }
+    
+    .column.middle {
+      width: 50%;
+    }
+    
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .column.side, .column.middle {
+        width: 100%;
+      }
+    }
+</style>
+<body>
+    <h2>Unequal columns</h2>
+    <div class="header">
+        <h1>Header</h1>
+        <p>Success is not about perfection.It's about progress.</p>
+    </div>
+    <div class="topnav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+    <div class="row">
+        <div class="column side">
+            <h2>Side</h2>
+            <p>The mausoleum building is the central structure of the entire complex. It is a white marble structure standing on a 6-metre (20 ft) high square plinth with sides measuring 95.5 metres (313 ft) in length.</p>
+        </div>
+        <div class="column middle">
+            <h2>Main content</h2>
+            <p>The mausoleum building is the central structure of the entire complex. It is a white marble structure standing on a 6-metre (20 ft) high square plinth with sides measuring 95.5 metres (313 ft) in length. The base structure is a large multi-chambered cube with chamfered corners forming an eight-sided structure that is approximately 57.3 metres (188 ft) long on each of the four long sides.[21]</p>
+        </div>
+        <div class="column side">
+            <h2>Side</h2>
+            <p>The mausoleum building is the central structure of the entire complex. It is a white marble structure standing on a 6-metre (20 ft) high square plinth with sides measuring 95.5 metres (313 ft) in length.</p>
+        </div>
+    </div>
+</body>
+</html>

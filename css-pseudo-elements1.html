@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-elements</title>
+</head>
+<style>
+    .p::first-line{
+        color: deeppink;
+        font-variant: small-caps;
+    }
+    .p1::first-letter{
+        color: blueviolet;
+        font-size: xx-large;
+    }
+    .p2::first-letter{
+        color: blue;
+        font-size: 200%;
+    }
+    .p3::first-letter{
+        color: blueviolet;
+        font-size: xx-large;
+    }
+    .p3::first-line{
+        color: chartreuse;
+        font-variant: small-caps;
+    }
+    .h1::before{
+    
+        content: url('file:///C:/Users/key/Pictures/OIP%20(1).jpg');
+        width: 20px;
+        
+    }
+
+    .ul li::marker{
+        color: brown;
+        font-size: 23px;
+    }
+    .nature::selection{
+        color: blueviolet;
+        background-color: blue;
+    }
+</style>
+<body>
+    <h2>The::first-line Pseudo-element</h2>
+    <p class="p">A long weekend is a weekend that is at least three<br> days long,due to a public or unofficial holida occurring on<br> either the following monaday or preceding friday.</p>
+
+    <h2>The::first-letter Pseudo-element</h2>
+    <p class="p1">Many countries also have four-day weekends,in which<br>two days adjoining the weekend are holidays.</p>
+
+    <h2>Pseudo-elements and HTML Classes</h2>
+    <p class="p2">Nature is made of everything we see around us-trees,flowers,plants,animals,and sky.</p>
+    <p>Nature helps us breathe,gives us food,water,shelter,medicines,and clothes.we find many colors in ature which make the Earth beautiful.</p>
+
+    <h2>Multiple Pseudo-elements</h2>
+    <p class="p3">A long weekend is a weekend that is at least three<br> days long,due to a public or unofficial holida occurring on<br> either the following monaday or preceding friday.</p>
+
+    <h2>CSS-The::before Pseudo-element</h2>
+    <h1 class="h1">Nature</h1>
+    <p>Human beings depend on nature to stay alive.</p>
+
+    <h2>CSS-The::after Pseudo-element</h2>
+    <h1 class="h">Nature</h1>
+    <p>Human beings depend on nature to stay alive.</p>
+
+
+    <h2>CSS-The::marker Pseudo-element</h2>
+    <ul class="ul">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <ol class="ul">
+        <li>First</li>
+        <li>second</li>
+        <li>Third</li>
+    </ol>
+
+    <h2>CSS-The::selection Pseudo-element</h2>
+    <h3 class="nature">Nature</h3>
+</body>
+</html>

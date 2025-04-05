@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Important</title>
+</head>
+<style>
+    #myid{
+        background-color: blue;
+    }
+    .myclass{
+        background-color: grey;
+    }
+    div p{
+        background-color: red !important;
+    }
+    #id{
+        background-color: blue !important;
+    }
+    .div1 .class{
+        background-color: grey !important;
+    }
+    .div1 p{
+        background-color: red !important;
+    }
+    .div2 button{
+        background-color: lightgrey;
+        color: white;
+        padding: 5px;
+        border: 1px solid black;
+    }
+    
+</style>
+<body>
+    <h1>CSS Importants</h1>
+    <h2>Important</h2>
+    <div class="div">
+        <p>Every flowers blomms in its own time.</p>
+        <p class="myclass">Only the small things in life are important</p>
+        <p id="myid">Be mindful.be grateful,be positive.be true.be kind.</p>
+    </div>
+
+    <h2>Important About !important</h2>
+    <div class="div1">
+        <p>Every flowers blomms in its own time.</p>
+        <p class="class">Only the small things in life are important</p>
+        <p id="id">Be mindful.be grateful,be positive.be true.be kind.</p>
+    </div>
+
+   
+</body>
+</html>

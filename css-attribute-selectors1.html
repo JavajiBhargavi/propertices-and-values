@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS attribute selectors</title>
+</head>
+<style>
+    .a[target]{
+        background-color: chartreuse;
+    }
+    .a1[target="_blank"]{
+        background-color: chocolate;
+    }
+    .img[title~="flower"]{
+        border: 5px solid yellow;
+    }
+    [class="top"]{
+        background: yellow;
+    }
+</style>
+<body>
+    <h2>CSS[attribute]selector</h2>
+    <div class="a">
+        <a href="https://www.w3schools.com">w3schools.com</a>
+        <a href="http://www.disney.com" target="_blank">disney.com</a>
+        <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+    </div>
+    <h2>CSS [attribute="value"]selector</h2>
+    <div class="a1">
+        <a href="https://www.w3schools.com">w3schools.com</a>
+        <a href="http://www.disney.com" target="_blank">disney.com</a>
+        <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+    </div>
+
+    <h2>CSS[attribute~="value"]selector</h2>
+    <div class="img">
+        <img src="file:///C:/Users/key/Pictures/Bridal_pink_-_morwell_rose_garden.jpg" title="klematis flower" width="150" height="113">
+        <img src="file:///C:/Users/key/Pictures/360_F_787166948_1YEZeLZl8XTsp6OXXK78rovNTNPC6PoC.jpg" title="flower" width="224" height="162">
+    </div>
+    <h2>CSS [attribute|="value"] Selector</h2>
+    <div>
+        <h1 class="top-header">Welcome</h1>
+        <p class="top-text">Hello world!</p>
+    </div>    
+</body>
+</html>

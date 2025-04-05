@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS overflow</title>
+</head>
+<style>
+    .overflow{
+        background-color: lightgreen;
+        color: white;
+        padding: 30px;
+        width: 15%;
+        height: 100px;
+        overflow: scroll;
+        border: 1px solid #c2c2c2;
+    }
+    .visible{
+        background-color: aquamarine;
+        width: 200px;
+        height: 50px;
+        border: 1px solid;
+        overflow: visible;
+    }
+    .hidden{
+        background-color: aquamarine;
+        width: 200px;
+        height: 50px;
+        overflow: hidden;
+    }
+    .flow{
+        background-color: aqua;
+        width: 15%;
+        height: 100px;
+        border: 1px solid black;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+</style>
+<body>
+    <h1>CSS Overflow</h1>
+    <div class="overflow">
+        A long weekend is a weekend that is at leats three days long,due to a public or unofficial holiday occurring on either the following Monday or preceding Friday.Many countries also have four-day weekends,in which two days adjoining the weekend are holidays.Examples are easter /good friday,and christmas/boxing day.
+    </div>
+
+    <h1>Overflow:visible</h1>
+    <div class="visible">
+        The computer was invented by charles babbage.itis an electric device which can store,organize and find information.
+    </div>
+
+    <h1 style="margin-top: 70px;">Overflow:hidden</h1>
+    <div class="hidden">
+        The computer was invented by charles babbage.itis an electric device which can store,organize and find information.
+    </div>
+
+    <h1 style="margin-top: 70px;">Overflow:x and y</h1>
+    <div class="flow">
+        A long weekend is a weekend that is at leats three days long,due to a public or unofficial holiday occurring on either the following Monday or preceding Friday.Many countries also have four-day weekends,in which two days adjoining the weekend are holidays.Examples are easter /good friday,and christmas/boxing day.
+    </div>
+</body>
+</html>

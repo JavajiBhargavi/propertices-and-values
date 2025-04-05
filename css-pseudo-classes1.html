@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS pseudo classes</title>
+</head>
+<style>
+    a.highlight:hover{
+        color: cornflowerblue;
+        font-size: 22px;
+    }
+    .div{
+        background-color: blue;
+        color: white;
+        padding: 25px;
+        text-align: center;
+        width: 10%;
+    }
+    .div:hover{
+        background-color: crimson;
+    }
+    .div1.p{
+        display: none;
+        background-color: yellow;
+        padding: 20px;
+    }
+    .div1:hover p{
+        display: block;
+    }
+    .div2 p:first-child{
+        color: cornflowerblue;
+    }
+    .div3 p i:first-child{
+        color: blue;
+    }
+    .div4 p:first-child i{
+        color: blueviolet;
+    }
+    .div5 q:lang(no){
+        quotes: "~""~";
+    }
+</style>
+<body>
+    <h2>Pseudo-classes and HTML Classes</h2>
+    <p><a href="css_syntax.asp" class="highlight">CSS Syntax</a></p>
+    <p><a href="default.asp">CSS Tutorial</a></p>
+
+    <h2>Hover on(div)</h2>
+    <div class="div">Stay focused.</div>
+
+    <h2>Simple Tooltip Hover</h2>
+    <div class="div1">
+        Get last in what you love.
+        <p>Your patience is your power.</p>
+    </div>
+
+    <h2>Match the first p elemant</h2>
+    <div class="div2">
+        <p>Life is short,and it is here to be lived.</p>
+        <p>Life is a one time offer, use it well.</p>
+        <div>
+            <p>You never fail until you stop trying.</p>
+            <p>Success in not about perfection.It's about progress.</p>
+        </div>
+    </div>
+
+    <h2>Match the first i element in all p elemants</h2>
+    <div class="div3">
+        <p>I am a <i>strong</i>person.I am a <i>strong</i>person.</p>
+        <p>I am a <i>strong</i>person.I am a <i>strong</i>person.</p>
+    </div>
+
+    <h2>Mach all i elemants in all first child p elemants</h2>
+    <div class="div4">
+        <p>I am a <i>strong</i>person.I am a <i>strong</i>person.</p>
+        <p>I am a <i>strong</i>person.I am a <i>strong</i>person.</p>
+        <div>
+            <p>I am a <i>strong</i>person.I am a <i>strong</i>person.</p>
+            <p>I am a <i>strong</i>person.I am a <i>strong</i>person.</p>
+        </div>
+    </div>
+    <h2>CSS-The:lang Pseudo-class</h2>
+    <div class="div5">
+        <p>Success is not about perfection.<q lang="no">you never fail until you stop trying</q>It,s about progress.</p>
+    </div>    
+</body>
+</html>

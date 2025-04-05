@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Clear</title>
+</head>
+<style>
+    img{
+        width: 100px;
+        height: 100px;
+        float: right;
+    }
+    div{
+        border: 3px solid green;
+        width: 400px;
+        padding: 5px;
+    }
+    .clearfix{
+        overflow: auto;
+    }
+    .clear::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
+<body>
+    <h1>CSS Clear</h1>
+    <h2>With out Clearfix</h2>
+    <div>
+        <img src="c:\Users\key\Pictures\Bridal_pink_-_morwell_rose_garden.jpg">Most roses spines(incorrectly called prickeles)on their steams.This is a common defense system in plants.
+    </div>
+
+    <h2 style="clear: right;">With Clearfix</h2>
+    <div class="clearfix">
+        <img src="c:\Users\key\Pictures\Bridal_pink_-_morwell_rose_garden.jpg">Most roses spines(incorrectly called prickeles)on their steams.This is a common defense system in plants.
+    </div>
+
+    <h2>With out Clearfix</h2>
+    <div>
+        <img src="c:\Users\key\Pictures\Bridal_pink_-_morwell_rose_garden.jpg">Most roses spines(incorrectly called prickeles)on their steams.This is a common defense system in plants.
+    </div>
+
+    <h2 style="clear:right">With new modern clearfix</h2>
+    <div class="clear">
+        <img src="c:\Users\key\Pictures\Bridal_pink_-_morwell_rose_garden.jpg">Most roses spines(incorrectly called prickeles)on their steams.This is a common defense system in plants.
+    </div>
+</body>
+</html>

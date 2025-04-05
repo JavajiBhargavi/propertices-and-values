@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties and values</title>
+</head>
+<style>
+    body{
+    background-color:white;
+}
+.pro{
+    background-color:  rgb(128 6 102);
+    padding: 3px;
+    text-align: center;
+    color: white;
+    border-radius: 10px 10px 0 0 ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(207, 37, 187);
+    font-size: large;
+ }
+ li{
+    float: left;
+ }
+ li a,.dropbtn{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+ }
+.div a:hover{
+    background-color:aqua;
+ }
+.dropdown:hover.dropbtn{
+    background-color:lightgreen;
+ }
+.div li.dropdown{
+    display: inline-block;
+ }
+ .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color:rgb(41, 41, 41);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    z-index: 2;
+    overflow-y: scroll;
+    height: 300px;
+ }
+ .dropdown-content::-webkit-scrollbar{
+    display: none;
+ }
+ .dropdown-content a{
+    color:white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+ }
+ .dropdown-content a:hover{
+    background-color: lightgreen;
+ }
+ .dropdown:hover .dropdown-content{
+    display:block;
+ } 
+ /* .color{
+    background-color:coral;
+   margin: 0 20% 0 20%;
+   border-radius: 0 0 15px 15px;
+ } */
+ /* .color ol{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin: 0 ;
+ }
+ .color a{
+    color:white;
+    font-size: large;
+    width: 100%;
+ }
+ .color a:hover{
+    background-color: red;
+    width: 90%;
+ } */
+ .div1 p{
+    margin-left: 25%;
+    width: 50%;
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p.t{
+    margin-left: 35%;
+}
+.div1 h1{
+    text-align: center;
+    color:blueviolet;
+    font-family:'Courier New', Courier, monospace;
+}
+.div1 h2{
+    text-align: center;
+    color: green;
+    font-size:25px;
+}
+.div2{
+    background-color: rgb(241, 236, 236);
+    padding: 5px 0 10px 0;
+    margin:0 10% 0 10%;
+    border-radius: 20px;
+    display: block;
+
+}
+.div2 h2{
+    color: blue;
+    font-size: 30px;
+    margin: 10px;
+    text-decoration-line:underline;
+    font-style: italic;
+}
+.para{
+    text-align: left;
+    padding: 20px;
+    margin:0px 20% 0px 35%;
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.heads{
+    display: none;
+    
+}
+
+.heads h1{
+    color: black;
+    text-align: center;
+}
+.heads p{
+    outline-color:red;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 3%;
+    padding: 1%;
+    font-size: large;
+}
+.first p:first-child {
+  color: blue;
+} 
+.click{
+    padding: 10px;
+    background-color: orangered;
+    border-style: none;
+    border-radius: 5px;
+    font-size: large;
+    color: white;
+    margin-left: 70%;
+    width: 20%;
+}
+.code{
+    padding: 10px 30px 10px 30px;
+    background-color:fuchsia;
+    border-style: none;
+    border-radius: 5px;
+    font-size: large;
+    color: white;
+    margin-left: 70%;
+    margin-bottom: 2%;
+}
+.my{
+    color: black;
+    margin-right: 10%;
+}
+ol{
+    list-style-type: none;
+    margin:0;
+    overflow: hidden;
+    background-color:coral;
+    border-radius:0 0 10px 10px;
+    display: flex;
+ }
+.color li{
+     font-size: large;
+ }
+ li a,.dropb{
+    display: inline-block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+ }
+.color a:hover{
+    background-color:red;
+ }
+.drop:hover.dropb{
+    background-color:lightsalmon;
+ }
+.color li.drop{
+    display: inline-block;
+ }
+ .drop-content{
+    display: none;
+    position: absolute;
+    background-color:rgb(103, 241, 183);
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px lightsalmon;
+    z-index: 2;
+ }
+ .drop-content a{
+    color:white;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+ }
+ .drop-content a:hover{
+    background-color: lightsalmon;
+ }
+ .drop:hover .drop-content{
+    display:block;
+ } 
+
+
+</style>
+<body>
+    
+        <div class="pro">
+    <h1>Properties and Values</h1>
+    </div>
+    <div style="position: sticky;top: 0;">
+    <div class="div">
+        <ul>
+            <li><a href="properties-and-values.html#" >HOME</a></li>
+            <li class="dropdown">
+            <a href="html1-page.html"  class="dropbtn" >HTML</a>
+            <div class="dropdown-content">
+                <a href="html1-basics.html" >HTML Basics</a>
+                <a href="html1-headings.html" >HTML headings</a>
+                <a href="html1-paragraphs.html" >HTML Paragraphs</a>
+                <a href="html1-images.html" >HTML images</a>
+                <a href="html1-tables.html" >HTML Tables</a>
+                <a href="html1-divs.html" >HTML Divs</a>
+                <a href="html1-lists.html" >HTML Lists</a>
+                <a href="html1-forms.html" >HTML Forms</a>
+            </div>
+            </li>
+           
+            <li class="dropdown">
+                <a href="css1-page.html"  class="dropbtn">CSS</a>
+                <div class="dropdown-content">
+                    <a href="css1-comment.html" >CSS Comments</a>
+                    <a href="css1-colors.html" >CSS Colors</a>
+                    <a href="css1-background-color.html" >CSS Backgrounds</a>
+                    <a href="css1-border-style.html">CSS Borders</a>
+                    <a href="css1-margins.html">CSS Margins</a>
+                    <a href="css1-padding.html">CSS Padding</a>
+                    <a href="css1-height-width.html">CSS Height/Width</a>
+                    <a href="css1-box-model.html">CSS Box-model</a>
+                    <a href="css1-outlines.html">CSS Outlines</a>
+                    <a href="css1-text.html">CSS Text</a>
+                    <a href="css1-fonts.html">CSS Fonts</a>
+                    <a href="css1-fonts.html">CSS icons</a>
+                    <a href="css1-links.html">CSS Links</a>
+                    <a href="css1-lists.html">CSS Lists</a>
+                    <a href="css1-tables.html">CSS Tables</a>
+                    <a href="css1-displays.html">CSS Display</a>
+                    <a href="css1-max-width.html">CSS Max-Width</a>
+                    <a href="css1-positions.html">CSS Positions</a>
+                    <a href="css1-z-index.html">CSS Z-index</a>
+                    <a href="css1-overflow.html">CSS Overflow</a>
+                    <a href="css1-float.html">CSS Float</a>
+                    <a href="css1-inline-block.html">CSS Inline-block</a>
+                    <a href="css1-align.html">CSS Align</a>
+                    <a href="css1-combinators.html">CSS Combinators</a>
+                    <a href="css1-pseudo-classes.html">CSS Pseudo-Classes</a>
+                    <a href="css1-pseudo-element.html">CSS Pseudo Elements</a>
+                    <a href="css1-opacity.html">CSS Opacity</a>
+                    <a href="css1-navigation-bar.html">CSS Navigation Bar</a>
+                    <a href="css1-dropdown.html">CSS Dropdowns</a>
+                    <a href="css1-image-gallery.html">CSS Image Gallery</a>
+                    <a href="css1-image-spirites.html">CSS Image Spirites</a>
+                    <a href="css1-attr-selectors.html">CSS Attributes Selectors</a>
+                    <a href="css1-forms.html">CSS Forms</a>
+                    <a href="css1-counters.html">CSS Counters</a>
+                    <a href="css1-website-layout.html">CSS Website Layout</a>
+                    <a href="css1-units.html">CSS Units</a>
+                    <a href="css1-specificity.html">CSS Specificity</a>
+                    <a href="css1-importent.html">CSS Important</a>
+
+                    
+
+                </div>
+            </li>
+        </ul>
+        </div>
+    
+    <div class="color">
+        <ol>
+            <li><a href="css1-pseudo-classes.html">Anchor Pseudo-classes</a></li>
+           <li><a href="css1-pseudo-classes-html.html">Pseudo-classes and HTML Classes</a></li>
+           <li><a href="css1-pseudo-classes-hover-div.html">Hover on div</a></li>
+           <li><a href="css1-pseudo-classes-simple-tooltip.html">Simple Tooltip Hover</a></li>
+           <li><a href="css1-pseudo-classes-first-child.html">CSS - The :first-child Pseudo-class</a></li>
+           <li><a href="css1-pseudo-classes-lang.html">CSS - The :lang Pseudo-class</a></li>
+          
+        </ol>
+    </div>
+    </div>
+    <div>
+    <div class="div1">
+           
+        <h1>CSS - The :first-child Pseudo-class</h1>
+        <p>The :first-child pseudo-class matches a specified element that is the first child of another element.</p>
+        <h1>Match the first &#x3C;p&#62; element</h1>
+        </div>
+            <div class="div2">
+            <h2>Example</h2>
+            <div id="b1">
+            <p class="para"> &#x3C;!DOCTYPE html&#62;<br>
+                &#x3C;html&#62;<br>
+                &#x3C;head&#62;<br>
+                &#x3C;title&#62;Page Title&#x3C;/title&#62;<br>
+                &#x3C;/head&#62;<br>
+                &#x3C;style&#62;<br>
+                p:first-child {<br>
+                    color: blue;<br>
+                } <br>
+                &#x3C;/style&#62;<br>
+                    &#x3C;body&#62;<br>
+
+                    &#x3C;p&#62;The Tortoise and the Hare&#x3C;/p&#62;<br>
+                    &#x3C;p&#62;The Fox and The Stork&#x3C;/p&#62;<br>
+
+                    &#x3C;div&#62;<br>
+                    &#x3C;p&#62;The Bear and Two Friends&#x3C;/p&#62;<br>
+                    &#x3C;p&#62;The Golden Eggs&#x3C;/p&#62;<br>
+                    &#x3C;/div&#62;<br>
+
+                    &#x3C;/body&#62;<br>
+                &#x3C;/html&#62;</p><br><br>
+                <button type="click" onclick="button()" class="click">Click on Output</button>
+            </div>
+            <div  class="heads" id="b">
+                <div class="first">
+                    <p>The Tortoise and the Hare</p>
+                    <p>The Fox and The Stork</p>
+                    <div>
+                    <p>The Bear and Two Friends</p>
+                    <p>The Golden Eggs</p>
+                    </div>
+                    
+                    <button type="Code" onclick="code()" class="code">Code</button>
+                    </div>
+            </div>
+            <script>
+                function button(){
+                    document.getElementById('b').style.display='block';
+                    document.getElementById('b1').style.display='none';
+                }
+                function code(){
+                    document.getElementById('b').style.display='none';
+                    document.getElementById('b1').style.display='block';
+                }
+            </script>
+       
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-forms</title>
+</head>
+<style> 
+    input[type=text] {
+      width: 50%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+    .input[type=text] {
+       width: 50%;
+       box-sizing: border-box;
+       border: 2px solid #ccc;
+       border-radius: 4px;
+       font-size: 16px;
+       background-color: white;
+       background-image: url('file:///C:/Users/key/Pictures/magnifying-glass-icon-isolated-on-white-background-search-illustration-vector%20(2).jpg');
+       background-position: 5px; 
+       background-size: 20px;
+       background-repeat: no-repeat;
+    }
+ </style>
+<body>
+    <h2>Padded input fields</h2>
+
+    <form>
+       <label for="fname">First Name</label>
+       <input type="text" id="fname" name="fname"><br>
+       <label for="lname">Last Name</label>
+       <input type="text" id="lname" name="lname">
+    </form>
+
+    <h2>Input field with an icon inside</h2>
+
+    <form>
+        <input class="input" type="text" name="search" placeholder="Search..">
+    </form>
+
+</body>
+</html>

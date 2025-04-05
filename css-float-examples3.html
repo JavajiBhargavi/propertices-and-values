@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS float</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .box{
+        float: left;
+        width: 300px;
+        padding: 50px;
+        height: 300px;
+    }
+    .clearfix::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .flex{
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: blueviolet;
+        width: 50%;
+    }
+    .box1{
+        background-color: lightgrey;
+        width: 50%;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color :#313131;
+        width: 400px;
+    }
+    li{
+        float: left;
+    }
+    li a{
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    li a:hover{
+        background-color:lightgreen;
+    }
+    .active{
+        background-color: magenta;
+    }
+
+</style>
+<body>
+    <h2>Equal Height Boxes</h2>
+    <div class="clearfix">
+        <div class="box" style="background-color: #bcbcbc;">
+            <h2>Quotation</h2>
+            <p>Find a reason to smile every day.</p>
+        </div>
+        <div class="box" style="background-color: #c2c2c2;">
+            <h2>Quotation</h2>
+            <p>We suffer more often in imagination than in reality.</p>
+            <p>Nothing is impossible.The word itself sas,I'm possible.</p>
+            <p>Powerful short quotes that will inspire you.</p>
+        </div>
+    </div>
+
+    <h2>Flexible Boxes</h2>
+    <div class="flex">
+        <div class="box1">Anyone who takes the time to be kind is beautiful.</div>
+        <div class="box1">Whatever you do never run back to what broke you.</div>
+    </div>
+  
+    <h1>Navigation menu</h1>
+    <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</body>
+</html>

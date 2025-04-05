@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+</head>
+<style>
+    .static{
+        position:static;
+        border: 3px solid #89BA76;
+        width: 500px;
+        margin: auto;
+    }
+    h2{
+        text-align: center;
+    }
+    div.relative{
+        position: relative;
+        border: 3px solid #23AB87;
+        left: 30px;
+        width: 500px;
+        margin: auto;
+    }
+    div.fixed{
+        position: fixed;
+        border: 3px solid #98ed43;
+        width: 500px;
+        bottom: 0;
+        right: 0;
+    }
+    
+</style>
+<body>
+    <h2>Position:static</h2>
+    <div class="static">Happiness depends upon ourselves.</div>
+
+    <h2>Position:relative</h2>
+    <div class="relative">Bothing worth having comes easy.</div>
+
+    <h2>Position:fixed</h2>
+    <div class="fixed">Always do what you are afraid todo.</div>
+
+   
+</body>
+</html>

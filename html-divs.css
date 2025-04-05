@@ -1,0 +1,77 @@
+.div{
+    background-color: cornflowerblue;
+    padding: 1px;
+    border-radius: 10px 10px 0 0;
+}
+.div h1{
+    text-align: center;
+    color: white;
+
+}
+.div1{
+    background-color: crimson;
+    margin: 0;
+    padding: 1px;
+    position: sticky;
+}
+.div1 ul{
+    display: flex;
+    list-style: none;
+    padding: 1px;
+    font-size: large;
+}
+.div1 a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+.div1 a:hover{
+    background-color: aqua;
+    padding: 15px;
+}
+.div2{
+    background-color: rgb(43, 43, 43);
+    margin: 0;
+    padding: 1px;
+}
+.div2 ul{
+    display: flex;
+    font-size: large;
+    list-style-type: none;
+    padding: 1px;
+}
+.div2 a{
+    text-decoration: none;
+   color: white;
+   padding: 20px;
+}
+.div2 a:hover{
+    background-color: red;
+}
+.div3 h1{
+    text-align: center;
+    color:deeppink;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.div3 p{
+    text-align: center;
+    font-size: large;
+}
+.div4 {
+    background-color: rgb(241, 236, 236);
+    padding: 5px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.div4 h2{
+    color: blue;
+    font-size: 30px;
+    margin: 10px;
+    text-decoration-line:underline;
+    font-style: italic;
+}
+.div4 p{
+    text-align: left;
+    padding: 20px;
+    margin:10% 20% 10% 40%;
+}
